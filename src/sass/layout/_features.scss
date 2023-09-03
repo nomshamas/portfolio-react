@@ -1,0 +1,32 @@
+.feature {
+  margin-top: -6rem;
+    &_card {
+    background-color: $white;
+    transition: all 0.2s ease-in-out;
+    padding: 2rem 1rem;
+    text-align: center;
+    &:hover {
+      transform: translateY(-10px);
+      & .feature_icon {
+        color: $primary-green;
+      }
+    }
+  }
+  &_icon {
+    font-size: $font-2xl !important;
+  }
+  &_body {
+    margin-top: 1rem;
+  }
+  &_title {
+    font-size: $font-sub-heading;
+    font-family: $paragraph-family;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+  &_text {
+    font-size: $font-normal;
+    font-family: $paragraph-family;
+    margin-bottom: 0;
+  }
+}

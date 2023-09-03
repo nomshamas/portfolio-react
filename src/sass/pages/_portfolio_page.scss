@@ -1,0 +1,55 @@
+.portfolio_page {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  &_card {
+    text-align: center;
+    position: relative;
+    &:hover .portfolio_page_image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .075;
+    background-color: $primary-green;
+    backface-visibility: visible;
+  }
+    &:hover .portfolio_page_back {
+      display: block;
+    }
+  }
+  &_front {
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  &_title {
+    font-size: $font-normal-md;
+    text-transform: capitalize;
+    position: relative;
+  }
+  &_description {
+    font-size: $font-normal;
+    font-family: $paragraph-family;
+  }
+  &_back {
+    display: none;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: $primary-green;
+    box-shadow: 1px 1px 4px 2px $primary-green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &_link {
+    font-size: $font-normal;
+    color: $white;
+    line-height: 4;
+    &:hover {
+      color: $white;
+    }
+  }
+}

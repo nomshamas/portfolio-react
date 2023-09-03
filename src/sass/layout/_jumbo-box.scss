@@ -1,0 +1,55 @@
+.box {
+    // padding-top: $section-heading;
+    margin-top: -6rem;
+    position: relative;
+    &_body {
+      padding: 3rem 1rem;
+      background-color: $white;
+      text-align: center;
+      border: 4px solid #e1e4e8;
+      position: relative;
+      ::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: $white;
+        position: absolute;
+        top: calc(-1 * 4px);
+        left: calc(-1 * 4px);
+        animation: borderAnime 5s infinite;
+      }
+    }
+    &_title {
+      font-family: $heading-family;
+      font-size: $font-heading;
+      overflow-wrap: break-word;
+    }
+    &_description {
+      font-size: $font-normal;
+      font-family: $paragraph-family;
+      margin: 1rem auto;
+    }
+    // &_btn {
+    //   @include pri-btn;
+    // }
+}
+
+
+@keyframes borderAnime {
+    0% {
+        top: calc(-1 * 4px);
+        left: calc(-1 * 4px)
+    }
+    25% {
+        top: calc(-1 * 4px);
+        left: 100%
+    }
+    50% {
+        top: 100%;
+        left: 100%
+    }
+    75% {
+        top: 100%;
+        left: calc(-1 * 4px)
+    }
+}

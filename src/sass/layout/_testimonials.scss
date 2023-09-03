@@ -1,0 +1,170 @@
+.testimonial {
+  padding-top: $section-heading;
+  &_quote:after {
+    content: "\201C";
+    position: absolute;
+    font-size: 10rem;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    color: $primary-green-sm;
+    margin-top: -3rem;
+    margin-right: -6rem;
+  }
+  &_img-wrapper {
+    display: inline-block;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: $black-normal;
+  }
+  &_img {
+    height: 100%;
+    width: 100%;
+    
+  }
+  &_bar-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: $primary-green;
+  }
+  &_bar-2 {
+    position: absolute;
+    bottom: -1.2rem;
+    right: 2.2rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: $primary-green;
+  }
+  &_bar-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: $primary-green;
+  }
+  // Testimonial
+
+// & .testimonial-card {
+//   transition: all .2s ease-in-out;
+//   // padding: 1rem !important;
+//   margin: 1rem auto;
+//   text-align: center;
+//   background-color: $green-light;
+//   transition: all .5s;
+//   &-img {
+//     height: 6rem;
+//     width: 6rem;
+//     margin-bottom: 1.5rem;
+//     border-radius: 50%;
+//     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+//     object-fit: cover;
+//     object-position: top center;
+//     transition: all .2s;
+//   }   
+//   &-body {
+//     &-title {
+//       font-size: 1.5rem;
+//       text-transform: capitalize;
+//       position: relative;
+//     }
+//     &-text {
+//       font-size: 1rem;
+//       padding-top: 1rem;
+//       padding-right: 1.5rem;
+//       padding-bottom: 1rem;
+//       padding-left: 4rem;
+//       margin-bottom: 0;
+//       background-color: $white;
+//       border-radius: 5px;
+//       text-align: left;
+//       position: relative;
+//       &:after {
+//         content: "\201C";
+//         position: absolute;
+//         font-size: 70px;
+//         opacity: 0.25;
+//         font-style: normal;
+//         top: 0px;
+//         left: 20px;
+//       }
+//     }
+//   }
+//   &:hover .testimonial-card-img {
+//     border: 4px solid $white;
+//     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.8);
+//   }
+// }
+
+.testimonial-card-body-text {
+      font-size: 1rem;
+      padding-top: 1rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1rem;
+      padding-left: 4rem;
+      margin-bottom: 0;
+      background-color: $white;
+      border-radius: 5px;
+      text-align: left;
+      position: relative;
+      &:after {
+        content: "\201C";
+        position: absolute;
+        font-size: 70px;
+        opacity: 0.25;
+        font-style: normal;
+        top: 0px;
+        left: 20px;
+      }
+    }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: $white;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background-color: $black;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 0 !important;
+}
+
+// .abc {
+//   background:
+//     linear-gradient(black, black) bottom left / 150px 2px,
+//     linear-gradient(black, black) bottom left / 2px 100px,
+//     linear-gradient(black, black) top right / 150px 2px,
+//     linear-gradient(black, black) top right / 2px 100px;
+//   background-repeat: no-repeat;
+// }

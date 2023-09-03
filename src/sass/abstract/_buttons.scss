@@ -1,0 +1,27 @@
+.button {
+  padding: 0 25px;
+  border-radius: 4px;
+  min-width: 140px;
+  height: 50px;
+  font-family: $paragraph-family;
+  font-weight: 600;
+  font-size: $font-sm;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: solid 1px $black-normal;
+}
+.button.cta-01 {
+  background: linear-gradient(90deg, $black-normal 0%, $black 100%);
+  color: $white;
+}
+.button.cta-02 {
+  background-color: transparent;
+  color: $black-normal;
+}

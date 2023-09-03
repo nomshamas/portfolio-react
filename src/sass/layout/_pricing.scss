@@ -1,0 +1,93 @@
+.pricing {
+  padding-top: 6rem;
+  &_card {
+    transition: all .2s ease-in-out;
+    padding: 2.5rem 2rem;
+    background-color: $white;
+    &:hover {
+      position: relative;
+      z-index: 1000;
+      transform: scale(1.05, 1.05);
+    }
+    &:hover .card:not(:hover){
+      transform: scale(.95);
+    }
+  }
+  &_body {
+    margin-top: 2rem;
+  }
+
+  &_list {
+    margin-top: 1rem;
+    display: flex;
+    // align-items: center;
+  }
+  &_text {
+    font-size: $font-normal;
+    margin-bottom: 0;
+  }
+  &_icon {
+    margin-top: .4rem;
+    margin-right: 1rem !important;
+    font-size: $font-normal !important;
+  }
+
+  // &_btn {
+  //   @include pri-btn;
+  //   display: block;
+  //   text-align: center;
+  //   margin-top: 2rem;
+  // }     
+}
+
+.card__pricing {
+  position: absolute;
+  background: $black-normal;
+  width: 60px;
+  height: 88px;
+  right: 1.5rem;
+  top: -1rem;
+  padding-top: 1.25rem;
+  text-align: center;
+}
+
+.card__pricing::before {
+  width: 14px;
+  height: 16px;
+  background-color: $black-normal;
+  top: 0;
+  left: -14px;
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.card__pricing::after, .card__pricing::before {
+  content: '';
+  position: absolute;
+}
+
+.card__pricing-number, .card__pricing-month {
+  color: $white;
+  font-size: $font-normal;
+}
+
+.card__pricing-symbol {
+  font-size: $font-normal;
+}
+
+.card__pricing-number, .card__pricing-month {
+  color: $white;
+}
+
+.card__pricing-month {
+  display: block;
+  font-size: $font-sm;
+}
+
+.card__pricing::after {
+  width: 100%;
+  height: 14px;
+  background-color: $white;
+  left: 0;
+  bottom: 0;
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}

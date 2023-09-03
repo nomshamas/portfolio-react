@@ -1,0 +1,28 @@
+.portfolio {
+  padding-top: $section-heading;
+  &_row {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_title {
+    font-family: $paragraph-family;
+    margin-bottom: 1rem;
+    font-size: $font-heading;
+    font-weight: 500;
+  }
+  &_text {
+    font-family: $paragraph-family;
+    font-size: $font-normal;
+    margin-bottom: 1rem;
+  }
+  // &_btn {
+  //   @include pri-btn;
+  // }
+  &_img {
+    filter: blur(3px);
+    max-height: 540px;
+    &:hover {
+      filter: drop-shadow(2px 4px 6px black);
+    }
+  }
+}
